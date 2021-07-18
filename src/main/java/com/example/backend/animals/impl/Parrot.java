@@ -13,12 +13,6 @@ public class Parrot extends Bird {
 
     @Override
     public void sing() {
-        if (animal instanceof Dog){
-            System.out.println("Woof, woof");
-        } else if (animal instanceof Cat){
-            System.out.printf("Me ow");
-        } else {
-            System.out.println("Cock-a-doodle-doo");
-        }
+        animal.sing();
     }
 }
