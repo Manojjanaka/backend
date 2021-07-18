@@ -1,21 +1,16 @@
-package com.example.backend.animals;
+package com.example.backend.actions.impl;
 
 import com.example.backend.actions.Flyable;
 
-public abstract class Bird extends Animal implements Flyable {
-
+public class FlyableImpl implements Flyable {
     private boolean wingsClipped;
-    private Flyable flyable;
 
-    public Bird(Flyable flyable) {
-        this.flyable = flyable;
-    }
-
+    @Override
     public void fly() {
         if (wingsClipped){
             throw new UnsupportedOperationException("I cannot fly");
         }
-        flyable.fly();
+        System.out.println("I am flying");
     }
 
     public void setWingsClipped(boolean wingsClipped) {
