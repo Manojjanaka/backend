@@ -3,6 +3,7 @@ package com.example.backend;
 import com.example.backend.animals.Bird;
 import com.example.backend.animals.impl.Chicken;
 import com.example.backend.animals.impl.Duck;
+import com.example.backend.enums.Gender;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
@@ -44,7 +45,7 @@ class BirdTest {
     @Test
     void chickenShouldNotFly() {
 
-        Chicken chicken = new Chicken();
+        Chicken chicken = new Chicken(Gender.FEMALE);
 
         Exception exception = Assertions.assertThrows(UnsupportedOperationException.class, chicken::fly);
 
