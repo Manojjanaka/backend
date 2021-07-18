@@ -22,7 +22,7 @@ public class Solution {
 
         Animal[] animals = new Animal[]{
                 new Duck(),
-                new Chicken(Gender.FEMALE),
+                new Chicken(Gender.FEMALE, "Hen"),
                 new Parrot(new Dog()),
                 new Shark(),
                 new Clownfish(),

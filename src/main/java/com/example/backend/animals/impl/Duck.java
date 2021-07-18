@@ -12,6 +12,7 @@ public class Duck extends Bird implements Swimable {
     public Duck() {
         super(new FlyableImpl());
         swimable = new SwimableImpl();
+        setName("Duck");
     }
 
     @Override

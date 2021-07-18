@@ -45,7 +45,7 @@ class BirdTest {
     @Test
     void chickenShouldNotFly() {
 
-        Chicken chicken = new Chicken(Gender.FEMALE);
+        Chicken chicken = new Chicken(Gender.FEMALE, "Hen");
 
         Exception exception = Assertions.assertThrows(UnsupportedOperationException.class, chicken::fly);
 

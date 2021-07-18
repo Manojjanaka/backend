@@ -8,10 +8,11 @@ public class Chicken extends Bird {
 
     private Gender gender;
 
-    public Chicken(Gender gender) {
+    public Chicken(Gender gender, String name) {
         super(new FlyableImpl());
         setWingsClipped(true);
         this.gender = gender;
+        setName(name);
     }
 
     @Override

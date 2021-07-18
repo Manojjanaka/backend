@@ -8,6 +8,10 @@ public class Dolphin extends Animal implements Swimable {
 
     private Swimable swimable = new SwimableImpl();
 
+    public Dolphin() {
+        setName("Dolphin");
+    }
+
     @Override
     public void swim() {
         swimable.swim();

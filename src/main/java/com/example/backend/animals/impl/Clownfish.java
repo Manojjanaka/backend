@@ -9,6 +9,7 @@ public class Clownfish extends Fish {
 
     public Clownfish() {
         super(Color.ORANGE, Size.SMALL, new SwimableImpl());
+        setName("Clownfish");
     }
 
     public void makeJoke() {

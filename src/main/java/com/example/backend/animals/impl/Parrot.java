@@ -11,6 +11,7 @@ public class Parrot extends Bird {
     public Parrot(LandAnimal animal) {
         super(new FlyableImpl());
         this.animal = animal;
+        setName(String.format("Parrot with %s", animal.getName()));
     }
 
     @Override

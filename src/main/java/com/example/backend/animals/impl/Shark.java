@@ -9,6 +9,7 @@ public class Shark extends Fish {
 
     public Shark() {
         super(Color.GRAY, Size.LARGE, new SwimableImpl());
+        setName("Shark");
     }
 
     public void eat(Fish fish){

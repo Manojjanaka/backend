@@ -7,6 +7,10 @@ public class Caterpillar extends Insects implements CanMetamorphosis<Butterfly> 
 
     private Butterfly butterfly;
 
+    public Caterpillar() {
+        setName("Caterpillar");
+    }
+
     public Butterfly metamorphosis() {
         if (butterfly==null){
             butterfly = new Butterfly();
