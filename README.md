@@ -1,3 +1,3 @@
 # Animal Management Backend
 
-![A test image](class diagram.jpeg)
+![Class Digaram](class diagram.jpeg)
