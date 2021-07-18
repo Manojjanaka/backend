@@ -15,7 +15,7 @@ public class Chicken extends Bird {
     }
 
     @Override
-    public void sing() {
+    public void speak() {
         if (gender.equals(Gender.MALE)) {
             System.out.printf("Cock-a-doodle-doo");
         } else {

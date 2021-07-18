@@ -1,10 +1,10 @@
 package com.example.backend.animals.impl;
 
-import com.example.backend.animals.Animal;
+import com.example.backend.animals.LandAnimal;
 
-public class Cat extends Animal {
+public class Cat extends LandAnimal {
     @Override
-    public void sing() {
+    public void speak() {
         System.out.println("Me ow");
     }
 }

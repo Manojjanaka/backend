@@ -1,8 +1,8 @@
-package com.example.backend;
+package com.example.backend.animals;
 
-import com.example.backend.animals.Bird;
 import com.example.backend.animals.impl.Chicken;
 import com.example.backend.animals.impl.Duck;
+import com.example.backend.animals.impl.Parrot;
 import com.example.backend.enums.Gender;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -11,19 +11,19 @@ import org.mockito.Mockito;
 class BirdTest {
 
     @Test
-    void birdShouldSing() {
+    void birdShouldSpeak() {
         Bird bird = Mockito.mock(Bird.class);
-        bird.sing();
+        bird.speak();
 
-        Mockito.verify(bird, Mockito.times(1)).sing();
+        Mockito.verify(bird, Mockito.times(1)).speak();
     }
 
     @Test
-    void duckShouldSing() {
+    void duckShouldSpeak() {
         Duck duck = Mockito.mock(Duck.class);
-        duck.sing();
+        duck.speak();
 
-        Mockito.verify(duck, Mockito.times(1)).sing();
+        Mockito.verify(duck, Mockito.times(1)).speak();
     }
 
     @Test
@@ -35,11 +35,11 @@ class BirdTest {
     }
 
     @Test
-    void chickenShouldSing() {
+    void chickenShouldSpeak() {
         Chicken chicken = Mockito.mock(Chicken.class);
-        chicken.sing();
+        chicken.speak();
 
-        Mockito.verify(chicken, Mockito.times(1)).sing();
+        Mockito.verify(chicken, Mockito.times(1)).speak();
     }
 
     @Test
@@ -50,5 +50,14 @@ class BirdTest {
         Exception exception = Assertions.assertThrows(UnsupportedOperationException.class, chicken::fly);
 
         Assertions.assertTrue(exception.getMessage().contains("I cannot fly"));
+    }
+
+    @Test
+    void parrotShouldSpeak() {
+        Parrot parrot = Mockito.mock(Parrot.class);
+        parrot.speak();
+
+        Mockito.verify(parrot, Mockito.times(1)).speak();
+
     }
 }

@@ -1,20 +1,20 @@
 package com.example.backend.animals.impl;
 
 import com.example.backend.actions.impl.FlyableImpl;
-import com.example.backend.animals.Animal;
 import com.example.backend.animals.Bird;
+import com.example.backend.animals.LandAnimal;
 
 public class Parrot extends Bird {
 
-    private Animal animal;
+    private LandAnimal animal;
 
-    public Parrot(Animal animal) {
+    public Parrot(LandAnimal animal) {
         super(new FlyableImpl());
         this.animal = animal;
     }
 
     @Override
-    public void sing() {
-        animal.sing();
+    public void speak() {
+        animal.speak();
     }
 }

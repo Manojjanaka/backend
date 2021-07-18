@@ -2,7 +2,7 @@ package com.example.backend.animals;
 
 import com.example.backend.actions.Flyable;
 
-public abstract class Bird extends Animal implements Flyable {
+public abstract class Bird extends LandAnimal implements Flyable {
 
     private boolean wingsClipped;
     private Flyable flyable;
