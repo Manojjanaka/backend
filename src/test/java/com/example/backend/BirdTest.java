@@ -1,5 +1,6 @@
 package com.example.backend;
 
+import com.example.backend.animals.Bird;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 
