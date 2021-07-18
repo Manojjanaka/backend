@@ -21,4 +21,8 @@ public abstract class Bird extends LandAnimal implements Flyable {
     public void setWingsClipped(boolean wingsClipped) {
         this.wingsClipped = wingsClipped;
     }
+
+    public boolean isWingsClipped() {
+        return wingsClipped;
+    }
 }

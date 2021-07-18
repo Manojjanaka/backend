@@ -1,5 +1,7 @@
 package com.example.backend.actions;
 
-public interface CanMetamorphosis<T> {
+import com.example.backend.animals.Animal;
+
+public interface CanMetamorphosis<T extends Animal> {
     T metamorphosis();
 }
