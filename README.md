@@ -1,3 +1,3 @@
 # Animal Management Backend
 
-![Class Digaram](class diagram.jpeg)
+![Class Digaram](https://github.com/Manojjanaka/backend/blob/main/class%20diagram.jpeg)
